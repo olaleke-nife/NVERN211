@@ -5,10 +5,3 @@ function handleSubmit(event) { event.preventDefault(); alert("Thank you for reac
 // Highlight the current page in the navbar window.addEventListener('DOMContentLoaded', () => { const navLinks = document.querySelectorAll('nav a'); const currentPage = window.location.pathname.split("/").pop();
 
 navLinks.forEach(link => { if (link.getAttribute("href") === currentPage) { link.classList.add("active"); } }); });
-
-// Toggle responsive navigation menu function toggleMenu() { const nav = document.getElementById('navMenu'); nav.classList.toggle('open'); }
-
-function toggleMenu() {
-  const nav = document.getElementById('navMenu');
-  nav.classList.toggle('open');
-}
