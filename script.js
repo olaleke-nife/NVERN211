@@ -8,3 +8,7 @@ navLinks.forEach(link => { if (link.getAttribute("href") === currentPage) { link
 
 // Toggle responsive navigation menu function toggleMenu() { const nav = document.getElementById('navMenu'); nav.classList.toggle('open'); }
 
+function toggleMenu() {
+  const nav = document.getElementById('navMenu');
+  nav.classList.toggle('open');
+}
