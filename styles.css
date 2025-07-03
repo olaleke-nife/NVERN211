@@ -1,1 +1,168 @@
+/* === Global Reset & Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 255, 200, 0.15);
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00ffc8;
+  border-bottom: 2px solid #00ffc8;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #1a1a1a, #121212);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+  max-width: 90%;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+}
+
+/* === Features Section === */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+.feature {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #00ffc8;
+}
+
+.feature i {
+  color: #00ffc8;
+  margin-bottom: 10px;
+}
+
+.feature a {
+  text-decoration: none;
+  color: #00ffc8;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* === Gallery === */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
+}
+
+/* === Form === */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  padding: 10px;
+  color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background: #00ffc8;
+  color: #121212;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background: #00cfa6;
+  transform: scale(1.05);
+}
+
+/* === Footer === */
+footer {
+  background-color: #1e1e1e;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    }
